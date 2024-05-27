@@ -1,0 +1,95 @@
+{
+  "$schema": "https://json.schemastore.org/nest-cli",
+  "collection": "@nestjs/schematics",
+  "sourceRoot": "apps/1-controller-demo/src",
+  "compilerOptions": {
+    "deleteOutDir": true,
+    "webpack": true,
+    "tsConfigPath": "apps/1-controller-demo/tsconfig.app.json"
+  },
+  "monorepo": true,
+  "root": "apps/1-controller-demo",
+  "projects": {
+    "common-utility": {
+      "type": "library",
+      "root": "libs/common-utility",
+      "entryFile": "index",
+      "sourceRoot": "libs/common-utility/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/common-utility/tsconfig.lib.json"
+      }
+    },
+    "1-controller-demo": {
+      "type": "application",
+      "root": "apps/1-controller-demo",
+      "entryFile": "main",
+      "sourceRoot": "apps/1-controller-demo/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/1-controller-demo/tsconfig.app.json"
+      }
+    },
+    "2-service-demo": {
+      "type": "application",
+      "root": "apps/2-service-demo",
+      "entryFile": "main",
+      "sourceRoot": "apps/2-service-demo/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/2-service-demo/tsconfig.app.json"
+      }
+    },
+    "3-module-demo": {
+      "type": "application",
+      "root": "apps/3-module-demo",
+      "entryFile": "main",
+      "sourceRoot": "apps/3-module-demo/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/3-module-demo/tsconfig.app.json"
+      }
+    },
+    "4-guard-middleware-demo": {
+      "type": "application",
+      "root": "apps/4-guard-middleware-demo",
+      "entryFile": "main",
+      "sourceRoot": "apps/4-guard-middleware-demo/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/4-guard-middleware-demo/tsconfig.app.json"
+      }
+    },
+    "5-interceptor-decorator-demo": {
+      "type": "application",
+      "root": "apps/5-interceptor-decorator-demo",
+      "entryFile": "main",
+      "sourceRoot": "apps/5-interceptor-decorator-demo/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/5-interceptor-decorator-demo/tsconfig.app.json"
+      }
+    },
+    "6-typeorm-demo": {
+      "type": "application",
+      "root": "apps/6-typeorm-demo",
+      "entryFile": "main",
+      "sourceRoot": "apps/6-typeorm-demo/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/6-typeorm-demo/tsconfig.app.json"
+      }
+    },
+    "7-mongoose-demo": {
+      "type": "application",
+      "root": "apps/7-mongoose-demo",
+      "entryFile": "main",
+      "sourceRoot": "apps/7-mongoose-demo/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/7-mongoose-demo/tsconfig.app.json"
+      }
+    },
+    "8-swagger-demo": {
+      "type": "application",
+      "root": "apps/8-swagger-demo",
+      "entryFile": "main",
+      "sourceRoot": "apps/8-swagger-demo/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/8-swagger-demo/tsconfig.app.json"
+      }
+    }
+  }
+}
